@@ -170,10 +170,10 @@ tài xế
 
 |Bước|Bên thực hiện|Nội dung thực hiện|
 |:-:|---|---|
-|**1**|Khách hàng & Nhân viên thực địa|Khách đến quầy lễ tân, xuất trình thông tin đặt phòng. Nhân viên thực địa (lễ tân) làm thủ tục giấy tờ trực tiếp (không qua ứng dụng).|
-|**2**|Nhân viên thực địa|Sau khi hoàn tất thủ tục, Nhân viên thực địa bấm xác nhận **nhận phòng** trên ứng dụng. Tab "Dịch vụ tiện ích" của khách được mở khóa.|
+|**1**|Khách hàng & Hướng dẫn viên|Khách đến quầy lễ tân, xuất trình thông tin đặt phòng. Hướng dẫn viên thông báo cập nhật trạng thái của tour.|
+|**2**|Hướng dẫn viên|Sau khi hoàn tất thủ tục, hướng dẫn viên bấm xác nhận **nhận phòng** trên ứng dụng. Tab "Dịch vụ tiện ích" của khách được mở khóa.|
 |**3**|Khách hàng|Trong thời gian lưu trú, khách có thể đặt thêm dịch vụ tiện ích qua ứng dụng _(xem mục 4.3)_. Chi phí phát sinh được ghi vào bill add-on.|
-|**4**|Nhân viên thực địa|Khi khách trả phòng, Nhân viên thực địa kiểm tra phòng, sau đó bấm xác nhận **trả phòng** trên ứng dụng. Hệ thống tổng hợp bill add-on.|
+|**4**|Hướng dẫn viên|Khi khách trả phòng, hướng dẫn viên kiểm tra phòng, sau đó bấm xác nhận **trả phòng** trên ứng dụng. Hệ thống tổng hợp bill add-on.|
 |**5**|Khách hàng|Xem và thanh toán bill add-on (nếu có) qua cổng thanh toán. Nếu không có add-on, booking tự động hoàn tất.|
 |**6**|Khách hàng|Để lại đánh giá khách sạn.|
 
@@ -187,7 +187,7 @@ tài xế
 |:-:|---|---|
 |**1**|Khách hàng|Vào tab **"Dịch vụ tiện ích"** trong màn hình booking đang lưu trú.|
 |**2**|Khách hàng|Chọn loại dịch vụ (bữa ăn, spa, giặt ủi…), số lượng, ngày và giờ sử dụng. Ghi chú yêu cầu đặc biệt nếu cần.|
-|**3**|Nhân viên thực địa|Nhận thông báo, chuẩn bị và thực hiện dịch vụ.|
+|**3**|Hướng dẫn viên|Nhận thông báo, chuẩn bị và thực hiện dịch vụ.|
 |**4**|Khách hàng|Theo dõi hóa đơn tổng bất kỳ lúc nào qua mục **"Hóa đơn hiện tại"**.|
 
 **Các dịch vụ tiện ích thường có**

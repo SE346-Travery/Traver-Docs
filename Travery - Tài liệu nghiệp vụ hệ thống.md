@@ -29,6 +29,7 @@ Travery (Travel Discovery) là công ty du lịch tự vận hành, sở hữu v
 
 > Tour trọn gói là dịch vụ chủ lực của Travery. Khách hàng thanh toán toàn bộ ngay khi đặt và chờ Điều phối viên xác nhận — vì Điều phối viên cần phân công xe và tài xế phù hợp trước khi chính thức xác nhận đoàn.
 
+- **Note:** Quy trình này có hỗ trợ các dịch vụ Add-ons. Có thể xem chi tiết hơn ở _[4.3](#43-dịch-vụ-tiện-ích-trong-thời-gian-lưu-trú-add-on)_.
 ---
 ### 2.1 Quy trình đặt Tour
 
@@ -36,11 +37,11 @@ Travery (Travel Discovery) là công ty du lịch tự vận hành, sở hữu v
 | :---: | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **1** | Khách hàng          | Xem danh sách tour trên ứng dụng. Lọc theo ngày khởi hành, điểm đến, loại tour và khoảng giá.                                                                               |
 | **2** | Khách hàng          | Chọn tour, xem chi tiết lịch trình, hình ảnh, giá và số chỗ còn trống. Nhấn **"Đặt tour"**.                                                                                 |
-| **3** | Khách hàng          | Điền đầy đủ thông tin đặt tour: số người lớn, số trẻ em, danh sách thành viên (họ tên + số CCCD/hộ chiếu), chế độ ăn, yêu cầu loại phòng và ghi chú đặc biệt. Xác nhận đặt. |
-| **4** | Khách hàng          | Thanh toán toàn bộ 100% giá trị tour qua cổng thanh toán. Chỗ được tạm giữ trong vòng **24 giờ** chờ hoàn tất thanh toán.                                                   |
+| **3** | Khách hàng          | Điền đầy đủ thông tin đặt tour: *số người lớn*, *số trẻ em*, *danh sách thành viên* (họ tên + CCCD/Hộ chiếu + chế độ ăn uống), và *các ghi chú đặc biệt*. Xác nhận đặt. |
+| **4** | Khách hàng          | Thanh toán toàn bộ 100% giá trị tour qua cổng thanh toán. Chỗ được tạm giữ trong vòng **15 phúts** chờ hoàn tất thanh toán.                                                   |
 | **5** | Điều phối viên      | Nhận thông báo thanh toán thành công. Kiểm tra thông tin booking, xem danh sách thành viên và yêu cầu của đoàn.                                                             |
 | **6** | Điều phối viên      | Phân công xe (loại xe, biển số, sức chứa) và tài xế phù hợp từ danh sách nội bộ. Xác nhận booking.                                                                          |
-| **7** | Điều phối viên      | Ứng dụng tự động gửi thông báo xác nhận đến khách hàng, kèm thông tin xe và tài xế được phân công.                                                                          |
+| **7** | Điều phối viên      | Ứng dụng tự động gửi thông báo xác nhận đến khách hàng, kèm thông tin Tour, xe và tài xế được phân công.                                                                          |
 | **8** | Hướng dẫn viên      | Vào ngày khởi hành: xác nhận đoàn đã xuất phát. Trong suốt hành trình, cập nhật các mốc tiến độ (đón khách → nhận phòng → tham quan → trả phòng → kết thúc).                |
 | **9** | Khách hàng          | Đánh giá chất lượng tour theo thang 1–5 sao và để lại nhận xét.                                                                                                             |
 
@@ -51,9 +52,7 @@ Travery (Travel Discovery) là công ty du lịch tự vận hành, sở hữu v
 | Số người lớn (từ 12 tuổi trở lên)             |    ✅     | Tính giá tour và sắp xếp phòng.                                 |
 | Số trẻ em (dưới 12 tuổi)                      |    ✅     | Tính giá ưu đãi trẻ em và sắp xếp chỗ ngủ.                      |
 | Họ tên người đặt & số điện thoại              |    ✅     | Đầu mối liên lạc chính giữa Hướng dẫn viên và đoàn.             |
-| Danh sách thành viên (họ tên + CCCD/Hộ chiếu) |    ✅     | Làm thủ tục nhận phòng khách sạn trong tour.                    |
-| Chế độ ăn uống                                |    ✅     | Chuẩn bị thực đơn phù hợp (chay / mặn / dị ứng thực phẩm).      |
-| Yêu cầu loại phòng                            |    —     | Sắp xếp phòng đơn, đôi, phòng view biển… theo nguyện vọng.      |
+| Danh sách thành viên (họ tên + CCCD/Giấy khai sinh + ghi chú) |    ✅     | Làm thủ tục nhận phòng khách sạn trong tour.                    |
 | Ghi chú đặc biệt                              |    —     | Hỗ trợ xe lăn, nhu cầu y tế, tổ chức sinh nhật trong chuyến đi… |
 
 ### 2.3 Quy trình hủy Tour & Chính sách hoàn tiền
@@ -84,7 +83,6 @@ tài xế
 | Tình huống                               | Xử lý                                                                                                                                                          |
 | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Khách không có mặt tại điểm đón đúng giờ | Hướng dẫn viên chờ tối đa **15 phút**, sau đó liên hệ số điện thoại đầu mối của đoàn.                                                                            |
-| Liên hệ được — khách đến muộn            | Nếu xe chưa khởi hành: chờ thêm theo thỏa thuận. Nếu xe đã khởi hành: khách tự di chuyển đến điểm hội quân tiếp theo — Travery không chịu chi phí phát sinh.   |
 | Không liên hệ được sau 15 phút           | Hướng dẫn viên ghi nhận vắng mặt trên ứng dụng, đoàn khởi hành đúng lịch.                                                                                      |
 | Chính sách hoàn tiền                     | **Không hoàn tiền** — khách đã thanh toán toàn bộ, việc không có mặt không được coi là hủy tour.                                                                |
 | Ghi nhận hệ thống                        | Booking chuyển trạng thái `NO_SHOW`. Lưu vết thời gian và ghi chú của Hướng dẫn viên để phục vụ đối soát nếu có khiếu nại.                                      |
@@ -101,10 +99,10 @@ tài xế
 
 |Bước|Bên thực hiện|Nội dung thực hiện|
 |:-:|---|---|
-|**1**|Khách hàng|Chọn điểm đi và điểm đến từ danh sách tuyến cố định của Travery.|
+|**1**|Khách hàng|Chọn điểm đi và điểm đến từ danh sách tuyến cố định của Travery và loại Xe (Ghế, Giường), giờ đi (Sáng sớm, Sáng, Chiều, Tối).|
 |**2**|Khách hàng|Chọn ngày khởi hành. Nếu tuyến có nhiều chuyến trong ngày, chọn chuyến theo giờ phù hợp.|
-|**3**|Khách hàng|Chọn số lượng vé cần mua. Sau đó chọn từng ghế tương ứng trên sơ đồ (mỗi vé = 1 ghế cụ thể). Toàn bộ ghế được giữ trong vòng **15 phút** để hoàn tất thanh toán.|
-|**4**|Khách hàng|Điền thông tin đơn đặt: họ tên và số điện thoại người đại diện, điểm đón/trả, hạng ghế và ghi chú nếu có. Xác nhận đặt.|
+|**3**|Khách hàng|Chọn *số lượng vé* cần mua. Sau đó chọn từng *ghế* tương ứng trên sơ đồ (mỗi vé = 1 ghế cụ thể). Toàn bộ ghế được giữ trong vòng **15 phút** để hoàn tất thanh toán.|
+|**4**|Khách hàng|Điền thông tin đơn đặt: *họ tên* và *số điện thoại người đại diện*, *điểm đón/trả*, và *ghi chú* nếu có. Xác nhận đặt.|
 |**5**|Khách hàng|Thanh toán toàn bộ tiền vé qua cổng thanh toán. Ngay sau khi thành công, vé điện tử được gửi về ứng dụng.|
 |**6**|Điều phối viên|Có các chuyến xe được cố định. Phân công lại xe cụ thể và tài xế cho chuyến nếu có vấn đề phát sinh.|
 |**7**|Hướng dẫn viên|Cập nhật trạng thái hành trình (đã khởi hành → đang trên đường → đã đến nơi).|
@@ -119,16 +117,15 @@ tài xế
 |Số lượng vé|✅|Tổng số vé cần mua. Mỗi vé gắn với một ghế cụ thể đã chọn trên sơ đồ.|
 |Điểm đón cụ thể|✅|Chọn từ các điểm đón Travery niêm yết — áp dụng chung cho cả đoàn.|
 |Điểm trả khách cụ thể|✅|Chọn từ các điểm trả Travery niêm yết — áp dụng chung cho cả đoàn.|
-|Hạng ghế|✅|Ghế thường / Ghế VIP / Giường nằm — giá khác nhau theo hạng.|
+|Ví trí ghế cụ thể|✅|Chọn vị trí ghế. Vị trí ghế là một mã duy nhất xác định loại ghế đó.|
 |Ghi chú|—|Hỗ trợ hành lý cồng kềnh, mang theo xe đạp, thú cưng (nếu có quy định)…|
 
 ### 3.3 Cách tính giá vé Xe
 
 |Thành phần|Cách tính|
 |---|---|
-|Giá tuyến niêm yết|Mỗi tuyến A → B có mức giá cố định do Travery quy định _(VD: Sài Gòn – Đà Lạt = 180.000 đ/vé ghế thường)_.|
-|Hệ số theo hạng ghế|Ghế thường: ×1.0 · Ghế VIP: ×1.2–1.3 · Giường nằm: ×1.4–1.5|
-|Thanh toán|Toàn bộ tiền vé thanh toán **một lần** khi đặt — không đặt cọc, không thanh toán sau.|
+|Giá tuyến niêm yết|Mỗi tuyến A → B có *mức giá cố định* do Travery quy định (VD: Sài Gòn – Đà Lạt = 180.000 đ/vé ghế thường).|
+|Thanh toán|Toàn bộ tiền vé thanh toán **một lần** khi đặt.|
 
 ### 3.4 Chính sách hủy vé Xe
 
@@ -160,24 +157,24 @@ tài xế
 
 |Bước|Bên thực hiện|Nội dung thực hiện|
 |:-:|---|---|
-|**1**|Khách hàng|Nhập điều kiện tìm kiếm: địa điểm, ngày nhận phòng, ngày trả phòng và số khách. Ứng dụng hiển thị danh sách khách sạn Travery còn phòng trống tại địa điểm đó.|
-|**2**|Khách hàng|Chọn khách sạn, xem chi tiết: hình ảnh, mô tả, vị trí, tiện nghi và danh sách các loại phòng còn trống kèm giá.|
+|**1**|Khách hàng|Nhập điều kiện tìm kiếm: *địa điểm*, *ngày nhận phòng*, *ngày trả phòng* và *số khách*. Ứng dụng hiển thị danh sách khách sạn Travery còn phòng trống tại địa điểm đó. Hỗ trợ các bộ lọc: khoảng giá, khu vực, đánh giá, tiện nghi.|
+|**2**|Khách hàng|Chọn khách sạn, xem chi tiết: hình ảnh, mô tả, vị trí, đánh giá, tiện nghi và danh sách các loại phòng còn trống (Mã phòng, Giá, Mô tả, Hình ảnh, Số giường, Số lượng người tối đa).|
 |**3**|Khách hàng|Chọn loại phòng phù hợp, nhấn **"Đặt phòng này"**.|
-|**4**|Khách hàng|Điền thông tin cá nhân: họ tên người đặt, số điện thoại, số khách thực tế, số đêm lưu trú, giờ nhận phòng dự kiến và yêu cầu đặc biệt (nếu có).|
+|**4**|Khách hàng|Điền thông tin cá nhân: *họ tên* người đặt, *số điện thoại*, *số khách thực tế*, *danh sách thành viên* (họ tên + CCCD/Hộ chiếu + chế độ ăn uống), *số đêm lưu trú*, *giờ nhận phòng dự kiến* và *yêu cầu đặc biệt* (nếu có).|
 |**5**|Khách hàng|Thanh toán toàn bộ 100% tiền phòng qua cổng thanh toán. Phòng được xác nhận và khóa ngay khi thành công.|
 
 ### 4.2 Quy trình Nhận phòng & Trả phòng
 
 |Bước|Bên thực hiện|Nội dung thực hiện|
 |:-:|---|---|
-|**1**|Khách hàng & Hướng dẫn viên|Khách đến quầy lễ tân, xuất trình thông tin đặt phòng. Hướng dẫn viên thông báo cập nhật trạng thái của tour.|
-|**2**|Hướng dẫn viên|Sau khi hoàn tất thủ tục, hướng dẫn viên bấm xác nhận **nhận phòng** trên ứng dụng. Tab "Dịch vụ tiện ích" của khách được mở khóa.|
-|**3**|Khách hàng|Trong thời gian lưu trú, khách có thể đặt thêm dịch vụ tiện ích qua ứng dụng _(xem mục 4.3)_. Chi phí phát sinh được ghi vào bill add-on.|
-|**4**|Hướng dẫn viên|Khi khách trả phòng, hướng dẫn viên kiểm tra phòng, sau đó bấm xác nhận **trả phòng** trên ứng dụng. Hệ thống tổng hợp bill add-on.|
-|**5**|Khách hàng|Xem và thanh toán bill add-on (nếu có) qua cổng thanh toán. Nếu không có add-on, booking tự động hoàn tất.|
+|**1**|Khách hàng|Khách đến quầy lễ tân, xuất trình thông tin đặt phòng. Lễ tân sẽ liên lạc với Điều phối viên để xác nhận và thông báo cập nhật trạng thái của tour.|
+|**2**|Điều phối viên|Sau khi xác nhận thành công, điều phối viên bấm xác nhận **nhận phòng** trên ứng dụng. Tab "Dịch vụ tiện ích" của khách được mở khóa.|
+|**3**|Khách hàng|Trong thời gian lưu trú, khách có thể đặt thêm dịch vụ tiện ích qua ứng dụng xem mục _[4.3](#43-dịch-vụ-tiện-ích-trong-thời-gian-lưu-trú-add-on)_. Chi phí phát sinh được ghi vào bill add-on.|
+|**4**|Khách hàng|Khi khách trả phòng, khách sẽ gửi yêu cầu check-out. Người của khách sạn lập tức kiểm tra phòng, các dịch vụ add-on và tính các phí phát sinh rồi bàn bạc với điều phối viên. Điều phối viên tổng hợp và gửi bill cuối cùng.|
+|**5**|Khách hàng|Xem và thanh toán bill (nếu có) qua cổng thanh toán. Nếu không có add-on, booking tự động hoàn tất.|
 |**6**|Khách hàng|Để lại đánh giá khách sạn.|
 
-> Check-in chỉ khả dụng từ **12:00 trưa** ngày nhận phòng trở đi. Check-out do Hướng dẫn viên thực hiện sau khi kiểm tra phòng — tránh trường hợp khách tự kết thúc khi chưa hoàn tất thủ tục.
+> Check-in chỉ khả dụng từ **12:00 trưa** ngày nhận phòng trở đi. Check-out do người của khách sạn thực hiện sau khi kiểm tra phòng — tránh trường hợp khách tự kết thúc khi chưa hoàn tất thủ tục.
 
 ### 4.3 Dịch vụ tiện ích trong thời gian lưu trú (Add-On)
 
@@ -187,7 +184,7 @@ tài xế
 |:-:|---|---|
 |**1**|Khách hàng|Vào tab **"Dịch vụ tiện ích"** trong màn hình booking đang lưu trú.|
 |**2**|Khách hàng|Chọn loại dịch vụ (bữa ăn, spa, giặt ủi…), số lượng, ngày và giờ sử dụng. Ghi chú yêu cầu đặc biệt nếu cần.|
-|**3**|Hướng dẫn viên|Nhận thông báo, chuẩn bị và thực hiện dịch vụ.|
+|**3**|Điều phối viên|Nhận thông báo, chuẩn bị, và liên lạc khách sạn để thực hiện dịch vụ.|
 |**4**|Khách hàng|Theo dõi hóa đơn tổng bất kỳ lúc nào qua mục **"Hóa đơn hiện tại"**.|
 
 **Các dịch vụ tiện ích thường có**
@@ -204,9 +201,10 @@ tài xế
 |Thông tin|Bắt buộc|Mục đích|
 |---|:-:|---|
 |Họ tên người đặt & số điện thoại|✅|Đầu mối liên lạc, xác nhận đặt phòng.|
-|Số lượng khách thực tế lưu trú|✅|Kiểm tra không vượt sức chứa phòng, chuẩn bị số lượng tiện nghi.|
+|Số khách thực tế|✅|Kiểm tra không vượt sức chứa phòng, chuẩn bị số lượng tiện nghi.|
+|Danh sách thành viên (họ tên + CCCD/Hộ chiếu + ghi chú)|✅|Kiểm tra không vượt sức chứa phòng, chuẩn bị số lượng tiện nghi. Xác minh danh tính và hỗ trợ các yêu cầu đặc biệt.|
 |Số đêm lưu trú dự kiến|✅|Xác nhận lại so với ngày check-in/check-out đã chọn. Dùng để tính tổng tiền phòng trước khi thanh toán.|
-|Giờ nhận phòng dự kiến|—|Giúp khách sạn chuẩn bị sẵn phòng. Mặc định: **14:00**.|
+|Giờ nhận phòng dự kiến|—|Giúp khách sạn chuẩn bị sẵn phòng. Mặc định: **12:00**.|
 |Yêu cầu đặc biệt|—|Tầng cao/thấp, hướng nhìn ra biển/vườn, giường đôi/đơn, phòng liền kề…|
 
 ### 4.5 Chính sách No Show-up — Khách Sạn
@@ -249,8 +247,8 @@ Custom Tour là dịch vụ Travery thiết kế chương trình du lịch riên
 | **1** | Khách hàng           | Nhắn tin cho Điều phối viên, mô tả yêu cầu: điểm muốn đến, thời gian đi, số người, ngân sách dự kiến và sở thích đặc biệt (ưu tiên biển/núi, thời gian tự do, yêu cầu ẩm thực…). |
 | **2** | Điều phối viên       | Trao đổi qua lại để làm rõ yêu cầu. Đề xuất lộ trình, danh sách điểm đến, các hoạt động, loại phương tiện, loại phòng và mức giá phù hợp.                                          |
 | **3** | Cả hai bên           | Thảo luận và điều chỉnh cho đến khi đạt thỏa thuận về chương trình, giá cả và các điều khoản đi kèm.                                                                                |
-| **4** | Điều phối viên       | Tạo chương trình Custom Tour trong hệ thống với đầy đủ thông tin đã thỏa thuận. Gửi link đặt cho khách ngay qua chat.                                                               |
-| **5** | Khách hàng           | Nhấn vào link, xem lại toàn bộ thông tin chương trình, điền form thông tin đặt và thanh toán toàn bộ qua VNPay.                                                                     |
+| **4** | Điều phối viên       | Tạo chương trình Custom Tour trong hệ thống với đầy đủ thông tin đã thỏa thuận. Tạo tour riêng dành cho khách.                                                               |
+| **5** | Khách hàng           | Đi vào Custom Tour trong hệ thống, xem lại toàn bộ thông tin và thanh toán toàn bộ qua VNPay.                                                                     |
 | **6** | Điều phối viên       | Phân công xe và tài xế. Custom Tour được xử lý hoàn toàn giống Tour thường từ bước này.                                                                                             |
 | **7** | Hướng dẫn viên       | Trực tiếp thực thi trên thực địa: dẫn đoàn, lái xe, cập nhật tiến độ và báo cáo sự cố.                                                                                             |
 
@@ -258,7 +256,7 @@ Custom Tour là dịch vụ Travery thiết kế chương trình du lịch riên
 
 ### 5.3 Chính sách No Show-up — Custom Tour
 
-Custom Tour vận hành giống Tour thường sau khi khách thanh toán. Chính sách no show-up áp dụng **hoàn toàn giống Quy trình 01 — Tour** _(xem mục 2.4)_: Hướng dẫn viên chờ 15 phút tại điểm đón, ghi nhận vắng mặt, không hoàn tiền và chuyển trạng thái `NO_SHOW`.
+Custom Tour vận hành giống Tour thường sau khi khách thanh toán. Chính sách no show-up áp dụng **hoàn toàn giống Quy trình 01 — Tour** xem mục  _[2.4](#24-chính-sách-no-show-up--tour)_: Hướng dẫn viên chờ 15 phút tại điểm đón, ghi nhận vắng mặt, không hoàn tiền và chuyển trạng thái `NO_SHOW`.
 
 > Do Custom Tour được tư vấn trực tiếp qua Chat, nếu khách có thay đổi kế hoạch vào phút chót, Điều phối viên nên **chủ động liên hệ qua kênh Chat đã thiết lập** để xác nhận trước ngày khởi hành — giúp tránh tình huống no show-up không cần thiết.
 
@@ -269,7 +267,7 @@ Custom Tour vận hành giống Tour thường sau khi khách thanh toán. Chín
 |Hỏi thêm về tour cụ thể|Nhắn tin từ trang chi tiết tour, đặt câu hỏi.|Giải đáp chi tiết lịch trình, điều kiện thời tiết, gợi ý thời điểm đi phù hợp.|
 |Yêu cầu thay đổi thông tin booking|Nhắn tin mô tả thay đổi cần thực hiện (thêm người, đổi loại phòng, ghi chú đặc biệt).|Cập nhật booking nếu còn khả dụng, thông báo nếu có phát sinh thêm chi phí.|
 |Tour đang diễn ra có vấn đề|Nhắn tin mô tả sự cố cần hỗ trợ.|Hỗ trợ từ xa hoặc điều phối Hướng dẫn viên xử lý trực tiếp tại chỗ.|
-|Muốn thiết kế Custom Tour|Nhắn tin mô tả yêu cầu, bắt đầu quy trình tư vấn _(xem mục 5.2)_.|Tư vấn, đề xuất lộ trình và dẫn dắt toàn bộ quy trình Custom Tour.|
+|Muốn thiết kế Custom Tour|Nhắn tin mô tả yêu cầu, bắt đầu quy trình tư vấn xem mục _[5.2](#52-custom-tour--thiết-kế-chương-trình-theo-yêu-cầu)_.|Tư vấn, đề xuất lộ trình và dẫn dắt toàn bộ quy trình Custom Tour.|
 |Khiếu nại sau khi sử dụng dịch vụ|Nhắn tin mô tả vấn đề và kết quả mong muốn.|Ghi nhận phản hồi, làm rõ sự việc và đề xuất phương án giải quyết phù hợp.|
 
 ---

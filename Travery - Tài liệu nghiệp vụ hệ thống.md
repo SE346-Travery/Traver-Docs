@@ -38,7 +38,7 @@ Travery (Travel Discovery) là công ty du lịch tự vận hành, sở hữu v
 | **1** | Khách hàng          | Xem danh sách tour trên ứng dụng. Lọc theo ngày khởi hành, điểm đến, loại tour và khoảng giá.                                                                               |
 | **2** | Khách hàng          | Chọn tour, xem chi tiết lịch trình, hình ảnh, giá và số chỗ còn trống. Nhấn **"Đặt tour"**.                                                                                 |
 | **3** | Khách hàng          | Điền đầy đủ thông tin đặt tour: *số người lớn*, *số trẻ em*, *danh sách thành viên* (họ tên + CCCD/Hộ chiếu + chế độ ăn uống), và *các ghi chú đặc biệt*. Xác nhận đặt. |
-| **4** | Khách hàng          | Thanh toán toàn bộ 100% giá trị tour qua cổng thanh toán. Chỗ được tạm giữ trong vòng **15 phúts** chờ hoàn tất thanh toán.                                                   |
+| **4** | Khách hàng          | Thanh toán toàn bộ 100% giá trị tour qua cổng thanh toán. Chỗ được tạm giữ trong vòng **15 phút** chờ hoàn tất thanh toán.                                                   |
 | **5** | Điều phối viên      | Nhận thông báo thanh toán thành công. Kiểm tra thông tin booking, xem danh sách thành viên và yêu cầu của đoàn.                                                             |
 | **6** | Điều phối viên      | Phân công xe (loại xe, biển số, sức chứa) và tài xế phù hợp từ danh sách nội bộ. Xác nhận booking.                                                                          |
 | **7** | Điều phối viên      | Ứng dụng tự động gửi thông báo xác nhận đến khách hàng, kèm thông tin Tour, xe và tài xế được phân công.                                                                          |
@@ -173,10 +173,10 @@ Travery (Travel Discovery) là công ty du lịch tự vận hành, sở hữu v
 
 |Bước|Bên thực hiện|Nội dung thực hiện|
 |:-:|---|---|
-|**1**|Khách hàng|Nhập điều kiện tìm kiếm: *địa điểm*, *ngày nhận phòng*, *ngày trả phòng* và *số khách*. Ứng dụng hiển thị danh sách khách sạn Travery còn phòng trống tại địa điểm đó. Hỗ trợ các bộ lọc: khoảng giá, khu vực, đánh giá, tiện nghi.|
+|**1**|Khách hàng|Nhập điều kiện tìm kiếm: *địa điểm*, *ngày nhận phòng* và *ngày trả phòng*. Ứng dụng hiển thị danh sách khách sạn Travery còn phòng trống tại địa điểm đó. Hỗ trợ các bộ lọc: khoảng giá, khu vực, đánh giá, tiện nghi.|
 |**2**|Khách hàng|Chọn khách sạn, xem chi tiết: hình ảnh, mô tả, vị trí, đánh giá, tiện nghi và danh sách các loại phòng còn trống (Mã phòng, Giá, Mô tả, Hình ảnh, Số giường, Số lượng người tối đa).|
 |**3**|Khách hàng|Chọn loại phòng phù hợp, nhấn **"Đặt phòng này"**.|
-|**4**|Khách hàng|Điền thông tin cá nhân: *họ tên* người đặt, *số điện thoại*, *số khách thực tế*, *danh sách thành viên* (họ tên + CCCD/Hộ chiếu + chế độ ăn uống), *số đêm lưu trú*, *giờ nhận phòng dự kiến* và *yêu cầu đặc biệt* (nếu có).|
+|**4**|Khách hàng|Điền thông tin đặt phòng: *họ tên* và *số điện thoại* người đặt, *danh sách thành viên* (họ tên + CCCD/Hộ chiếu) và *yêu cầu đặc biệt* (nếu có — lưu ý có thể không được đáp ứng tùy tình trạng thực tế của khách sạn).|
 |**5**|Khách hàng|Thanh toán toàn bộ 100% tiền phòng qua cổng thanh toán. Phòng được xác nhận và khóa ngay khi thành công.|
 
 ### 4.2 Quy trình Nhận phòng & Trả phòng
@@ -216,12 +216,10 @@ Travery (Travel Discovery) là công ty du lịch tự vận hành, sở hữu v
 
 |Thông tin|Bắt buộc|Mục đích|
 |---|:-:|---|
-|Họ tên người đặt & số điện thoại|✅|Đầu mối liên lạc, xác nhận đặt phòng.|
-|Số khách thực tế|✅|Kiểm tra không vượt sức chứa phòng, chuẩn bị số lượng tiện nghi.|
-|Danh sách thành viên (họ tên + CCCD/Hộ chiếu + ghi chú)|✅|Kiểm tra không vượt sức chứa phòng, chuẩn bị số lượng tiện nghi. Xác minh danh tính và hỗ trợ các yêu cầu đặc biệt.|
-|Số đêm lưu trú dự kiến|✅|Xác nhận lại so với ngày check-in/check-out đã chọn. Dùng để tính tổng tiền phòng trước khi thanh toán.|
-|Giờ nhận phòng dự kiến|—|Giúp khách sạn chuẩn bị sẵn phòng. Mặc định: **12:00**.|
-|Yêu cầu đặc biệt|—|Tầng cao/thấp, hướng nhìn ra biển/vườn, giường đôi/đơn, phòng liền kề…|
+|Họ tên người đặt|✅|Người đại diện cho toàn bộ booking — là đầu mối liên lạc chính.|
+|Số điện thoại người đặt|✅|Nhận thông báo xác nhận và liên hệ khi cần.|
+|Danh sách thành viên (họ tên + CCCD/Hộ chiếu)|✅|Xác minh danh tính khi nhận phòng.|
+|Yêu cầu đặc biệt|—|Tầng cao/thấp, hướng nhìn ra biển/vườn, giường đôi/đơn, phòng liền kề… Lưu ý: các yêu cầu này có thể không được đáp ứng tùy tình trạng thực tế của khách sạn.|
 
 ### 4.5 Chính sách Hủy phòng & Chính sách hoàn tiền
 
@@ -236,11 +234,11 @@ Travery (Travel Discovery) là công ty du lịch tự vận hành, sở hữu v
 
 **Bảng chính sách hoàn tiền — Khách Sạn**
 
-|Thời điểm hủy|Hoàn tiền|
-| -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|Trước 72 giờ so với giờ check-in|Hoàn 100% tiền phòng|
-|Từ 24–72 giờ trước giờ check-in|Hoàn 50% tiền phòng|
-|Trong vòng 24 giờ trước giờ check-in|Không hoàn tiền|
+|Thời điểm hủy|Hoàn tiền|Ghi chú|
+| -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |--------------------------------------------------|
+|Trước 72 giờ so với giờ check-in|100%|Không mất phí hủy|
+|Từ 24–72 giờ trước giờ check-in|50%|Quá gần giờ check-in, khách sạn đã được bố trí.|
+|Trong vòng 24 giờ trước giờ check-in|0%|Liên hệ Điều phối viên qua Chat để được hỗ trợ ngoại lệ.|
 
 > Tiền hoàn sẽ được trả về phương thức thanh toán ban đầu trong vòng **5–7 ngày làm việc** kể từ khi hủy thành công.
 
@@ -289,8 +287,7 @@ Custom Tour là dịch vụ Travery thiết kế chương trình du lịch riên
 | **2** | Điều phối viên       | Trao đổi qua lại để làm rõ yêu cầu. Đề xuất lộ trình, danh sách điểm đến, các hoạt động, loại phương tiện, loại phòng và mức giá phù hợp.                                          |
 | **3** | Cả hai bên           | Thảo luận và điều chỉnh cho đến khi đạt thỏa thuận về chương trình, giá cả và các điều khoản đi kèm.                                                                                |
 | **4** | Điều phối viên       | Tạo chương trình Custom Tour trong hệ thống với đầy đủ thông tin đã thỏa thuận. Tạo tour riêng dành cho khách.                                                               |
-| **5** | Khách hàng           | Đi vào Custom Tour trong hệ thống, xem lại toàn bộ thông tin và thanh toán toàn bộ qua VNPay.                                                                     |
-| **6** | Điều phối viên       | Phân công xe và tài xế. Custom Tour được xử lý hoàn toàn giống Tour thường từ bước này.                                                                                             |
+| **5** | Khách hàng           | Đi vào Custom Tour trong hệ thống, xem lại toàn bộ thông tin và qua cổng thanh toán.                                                                     |
 | **7** | Hướng dẫn viên       | Trực tiếp thực thi trên thực địa: dẫn đoàn, lái xe, cập nhật tiến độ và báo cáo sự cố.                                                                                             |
 
 > Custom Tour phù hợp với: đoàn doanh nghiệp (team building, company trip), gia đình đặt nguyên đoàn, khách muốn lịch trình linh hoạt hoặc điểm đến không có trong tour cố định.

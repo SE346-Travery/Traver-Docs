@@ -67,7 +67,6 @@ Travery (Travel Discovery) là công ty du lịch tự vận hành, sở hữu v
 |**4**|Điều phối viên|Xác nhận hoàn tất hủy booking. Chỗ đã đặt được giải phóng cho khách hàng khác.|
 
 **Bảng chính sách hoàn tiền — Tour**
-tài xế
 |Thời điểm hủy|Hoàn tiền|Ghi chú|
 |---|:-:|---|
 |Hủy trước 7 ngày trở lên|**100%**|Không mất phí hủy.|
@@ -99,9 +98,9 @@ tài xế
 
 |Bước|Bên thực hiện|Nội dung thực hiện|
 |:-:|---|---|
-|**1**|Khách hàng|Chọn điểm đi và điểm đến từ danh sách tuyến cố định của Travery và loại Xe (Ghế, Giường), giờ đi (Sáng sớm, Sáng, Chiều, Tối).|
-|**2**|Khách hàng|Chọn ngày khởi hành. Nếu tuyến có nhiều chuyến trong ngày, chọn chuyến theo giờ phù hợp.|
-|**3**|Khách hàng|Chọn *số lượng vé* cần mua. Sau đó chọn từng *ghế* tương ứng trên sơ đồ (mỗi vé = 1 ghế cụ thể). Toàn bộ ghế được giữ trong vòng **15 phút** để hoàn tất thanh toán.|
+|**1**|Khách hàng|Nhập điều kiện tìm kiếm: *điểm đi*, *điểm đến* và *ngày khởi hành*. Ứng dụng hiển thị danh sách các chuyến xe Travery còn chỗ trống trên tuyến đó.|
+|**2**|Khách hàng|Lọc chuyến phù hợp theo: **Loại xe** (Ghế / Giường), **Giờ đi** (Sáng sớm 04:00–07:00, Sáng 07:00–12:00, Chiều 12:00–17:00, Tối 17:00–23:00), **Tầng** (Trên / Dưới), **Hàng ghế** (Đầu / Giữa / Cuối). Chọn chuyến phù hợp.|
+|**3**|Khách hàng|Chọn *số lượng vé* cần mua. Sau đó chọn từng *vị trí ghế* cụ thể trên sơ đồ (mỗi vé = 1 ghế). Toàn bộ ghế được giữ trong vòng **15 phút** để hoàn tất thanh toán.|
 |**4**|Khách hàng|Điền thông tin đơn đặt: *họ tên* và *số điện thoại người đại diện*, *điểm đón/trả*, và *ghi chú* nếu có. Xác nhận đặt.|
 |**5**|Khách hàng|Thanh toán toàn bộ tiền vé qua cổng thanh toán. Ngay sau khi thành công, vé điện tử được gửi về ứng dụng.|
 |**6**|Điều phối viên|Có các chuyến xe được cố định. Phân công lại xe cụ thể và tài xế cho chuyến nếu có vấn đề phát sinh.|
@@ -115,9 +114,13 @@ tài xế
 |Họ tên người đặt|✅|Người đại diện cho toàn bộ vé trong đơn — là đầu mối liên hệ.|
 |Số điện thoại liên hệ|✅|Nhận thông báo, mã vé và tài xế liên hệ khi cần.|
 |Số lượng vé|✅|Tổng số vé cần mua. Mỗi vé gắn với một ghế cụ thể đã chọn trên sơ đồ.|
+|Loại xe|✅|Ghế hoặc Giường — xác định loại phương tiện cho chuyến đi.|
+|Khung giờ đi|✅|Sáng sớm (04:00–07:00), Sáng (07:00–12:00), Chiều (12:00–17:00), Tối (17:00–23:00).|
+|Tầng|✅|Tầng trên hoặc tầng dưới — áp dụng cho xe giường.|
+|Hàng ghế|✅|Đầu, giữa hoặc cuối xe — hỗ trợ chọn vị trí phù hợp với nhu cầu.|
 |Điểm đón cụ thể|✅|Chọn từ các điểm đón Travery niêm yết — áp dụng chung cho cả đoàn.|
 |Điểm trả khách cụ thể|✅|Chọn từ các điểm trả Travery niêm yết — áp dụng chung cho cả đoàn.|
-|Ví trí ghế cụ thể|✅|Chọn vị trí ghế. Vị trí ghế là một mã duy nhất xác định loại ghế đó.|
+|Ví trí ghế cụ thể|✅|Chọn vị trí ghế. Vị trí ghế là một mã duy nhất xác định ghế đó.|
 |Ghi chú|—|Hỗ trợ hành lý cồng kềnh, mang theo xe đạp, thú cưng (nếu có quy định)…|
 
 ### 3.3 Cách tính giá vé Xe
@@ -127,13 +130,26 @@ tài xế
 |Giá tuyến niêm yết|Mỗi tuyến A → B có *mức giá cố định* do Travery quy định (VD: Sài Gòn – Đà Lạt = 180.000 đ/vé ghế thường).|
 |Thanh toán|Toàn bộ tiền vé thanh toán **một lần** khi đặt.|
 
-### 3.4 Chính sách hủy vé Xe
+### 3.4 Chính sách hủy vé Xe & Chính sách hoàn tiền
+
+> Khách hàng có thể hủy vé xe bất cứ lúc nào **trước khi xe khởi hành**. Sau khi xe đã lăn bánh, không thể hủy — mọi vấn đề phát sinh cần liên hệ Điều phối viên qua Chat.
+
+|Bước|Bên thực hiện|Nội dung thực hiện|
+|:-:|---|---|
+|**1**|Khách hàng|Vào màn hình chi tiết booking, nhấn **"Hủy vé"**. Ứng dụng hiển thị số tiền được hoàn dựa trên thời gian còn lại đến giờ khởi hành.|
+|**2**|Khách hàng|Xác nhận hủy, ghi lý do (không bắt buộc).|
+|**3**|Điều phối viên|Nhận yêu cầu hủy, xử lý hoàn tiền theo chính sách và liên hệ khách nếu cần làm rõ.|
+|**4**|Điều phối viên|Xác nhận hoàn tất hủy booking. Chỗ đã đặt được giải phóng cho khách hàng khác.|
+
+**Bảng chính sách hoàn tiền — Vé Xe**
 
 |Thời điểm hủy|Hoàn tiền|Ghi chú|
 |---|:-:|---|
 |Hủy trước 2 giờ so với giờ khởi hành|**100%**|Không mất phí hủy.|
 |Hủy dưới 2 giờ trước giờ khởi hành|**0%**|Quá gần giờ khởi hành, xe đã được bố trí.|
 |Sau khi xe đã khởi hành|**0%**|Liên hệ Điều phối viên qua Chat để được hỗ trợ ngoại lệ.|
+
+> Nếu Travery là bên chủ động hủy hoặc thay đổi lịch xe, khách hàng sẽ được hoàn **100%** không điều kiện.
 
 ### 3.5 Chính sách No Show-up — Xe
 
@@ -207,7 +223,32 @@ tài xế
 |Giờ nhận phòng dự kiến|—|Giúp khách sạn chuẩn bị sẵn phòng. Mặc định: **12:00**.|
 |Yêu cầu đặc biệt|—|Tầng cao/thấp, hướng nhìn ra biển/vườn, giường đôi/đơn, phòng liền kề…|
 
-### 4.5 Chính sách No Show-up — Khách Sạn
+### 4.5 Chính sách Hủy phòng & Chính sách hoàn tiền
+
+> Khách hàng có thể hủy booking trực tiếp trên ứng dụng trước ngày nhận phòng. Sau khi đã check-in, không thể hủy — mọi vấn đề phát sinh cần liên hệ Điều phối viên qua Chat.
+
+|Bước|Bên thực hiện|Nội dung thực hiện|
+|:-:|---|---|
+|**1**|Khách hàng|Vào màn hình chi tiết booking, nhấn **"Hủy phòng"**. Ứng dụng hiển thị số tiền được hoàn dựa trên thời gian còn lại đến giờ check-in dự kiến.|
+|**2**|Khách hàng|Xác nhận hủy, ghi lý do (không bắt buộc).|
+|**3**|Điều phối viên|Nhận yêu cầu hủy, xử lý hoàn tiền theo chính sách và liên hệ khách nếu cần làm rõ.|
+|**4**|Điều phối viên|Xác nhận hoàn tất hủy booking. Phòng được giải phóng để nhận đặt mới.|
+
+**Bảng chính sách hoàn tiền — Khách Sạn**
+
+|Thời điểm hủy|Hoàn tiền|
+| -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|Trước 72 giờ so với giờ check-in|Hoàn 100% tiền phòng|
+|Từ 24–72 giờ trước giờ check-in|Hoàn 50% tiền phòng|
+|Trong vòng 24 giờ trước giờ check-in|Không hoàn tiền|
+
+> Tiền hoàn sẽ được trả về phương thức thanh toán ban đầu trong vòng **5–7 ngày làm việc** kể từ khi hủy thành công.
+
+> Nếu Travery là bên chủ động hủy hoặc thay đổi booking, khách hàng sẽ được hoàn **100%** không điều kiện.
+
+> Nếu hủy do sự cố bất khả kháng (thiên tai, tai nạn, bệnh cấp cứu…), khách liên hệ Điều phối viên qua Chat để được xem xét theo từng trường hợp cụ thể.
+
+### 4.6 Chính sách No Show-up — Khách Sạn
 
 > **No show-up** là trường hợp khách hàng có booking đã xác nhận nhưng không đến nhận phòng trong ngày check-in đã đặt.
 
@@ -216,7 +257,7 @@ tài xế
 | Khách không đến trong ngày check-in (trước 23:59)  | Phòng vẫn được giữ nguyên cho khách đến hết **23:59** ngày check-in. Điều phối viên có thể chủ động liên hệ số điện thoại đầu mối để xác nhận.            |
 | Khách thông báo đến muộn sau 23:59                 | Travery xem xét giữ phòng sang ngày hôm sau theo từng trường hợp cụ thể. Không áp dụng tự động — cần Điều phối viên xác nhận qua chat.                   |
 | Không liên hệ và không đến sau 23:59 ngày check-in | Phòng được giải phóng, booking chuyển trạng thái `NO_SHOW`.                                                                                              |
-| Chính sách hoàn tiền                               | **Không hoàn tiền** — tiền phòng đã thanh toán toàn bộ khi đặt, phòng đã được giữ suốt ngày check-in.                                                    |
+| Chính sách hoàn tiền                               | **Không hoàn tiền** — Phòng đã được giữ riêng và không thể nhận khách khác trong suốt ngày check-in. Trường hợp có lý do bất khả kháng, khách liên hệ Điều phối viên để được xem xét.                                                    |
 | Ghi nhận hệ thống                                  | Điều phối viên đánh dấu `NO_SHOW` trên hệ thống. Phòng được mở khóa để nhận đặt mới.                                                                    |
 
 ---
@@ -254,13 +295,38 @@ Custom Tour là dịch vụ Travery thiết kế chương trình du lịch riên
 
 > Custom Tour phù hợp với: đoàn doanh nghiệp (team building, company trip), gia đình đặt nguyên đoàn, khách muốn lịch trình linh hoạt hoặc điểm đến không có trong tour cố định.
 
-### 5.3 Chính sách No Show-up — Custom Tour
+### 5.3 Quy trình hủy Custom Tour & Chính sách hoàn tiền
+
+> Khách hàng có thể yêu cầu hủy Custom Tour bất cứ lúc nào **trước khi đoàn khởi hành**. Sau khi tour đã bắt đầu, không thể hủy — mọi vấn đề phát sinh cần liên hệ Điều phối viên qua Chat.
+
+Do Custom Tour được tư vấn và xác nhận trực tiếp qua Chat, yêu cầu hủy cũng thực hiện qua kênh này thay vì thao tác trực tiếp trên ứng dụng.
+
+|Bước|Bên thực hiện|Nội dung thực hiện|
+|:-:|---|---|
+|**1**|Khách hàng|Nhắn yêu cầu hủy cho Điều phối viên qua kênh Chat đã thiết lập. Điều phối viên phản hồi số tiền được hoàn dựa trên số ngày còn lại đến ngày khởi hành.|
+|**2**|Khách hàng|Xác nhận hủy, ghi lý do (không bắt buộc).|
+|**3**|Điều phối viên|Nhận yêu cầu hủy, xử lý hoàn tiền theo chính sách và liên hệ khách nếu cần làm rõ.|
+|**4**|Điều phối viên|Xác nhận hoàn tất hủy booking. Chỗ đã đặt được giải phóng.|
+
+**Bảng chính sách hoàn tiền — Custom Tour**
+
+Áp dụng hoàn toàn giống Tour thường, xem mục _[2.3](#23-quy-trình-hủy-tour--chính-sách-hoàn-tiền)_.
+
+|Thời điểm hủy|Hoàn tiền|Ghi chú|
+|---|:-:|---|
+|Hủy trước 7 ngày trở lên|**100%**|Không mất phí hủy.|
+|Hủy trong vòng 3–6 ngày trước ngày khởi hành|**50%**|Phí hủy muộn tương đương 50% giá trị tour.|
+|Hủy trong vòng 24 giờ trước ngày khởi hành|**0%**|Phí hủy khẩn cấp — giữ toàn bộ tiền đã thanh toán.|
+
+> Nếu Travery là bên chủ động hủy hoặc thay đổi Custom Tour, khách hàng sẽ được hoàn **100%** không điều kiện.
+
+### 5.4 Chính sách No Show-up — Custom Tour
 
 Custom Tour vận hành giống Tour thường sau khi khách thanh toán. Chính sách no show-up áp dụng **hoàn toàn giống Quy trình 01 — Tour** xem mục  _[2.4](#24-chính-sách-no-show-up--tour)_: Hướng dẫn viên chờ 15 phút tại điểm đón, ghi nhận vắng mặt, không hoàn tiền và chuyển trạng thái `NO_SHOW`.
 
 > Do Custom Tour được tư vấn trực tiếp qua Chat, nếu khách có thay đổi kế hoạch vào phút chót, Điều phối viên nên **chủ động liên hệ qua kênh Chat đã thiết lập** để xác nhận trước ngày khởi hành — giúp tránh tình huống no show-up không cần thiết.
 
-### 5.4 Các tình huống Chat thường gặp
+### 5.5 Các tình huống Chat thường gặp
 
 |Tình huống|Khách hàng cần làm gì|Điều phối viên xử lý|
 |---|---|---|

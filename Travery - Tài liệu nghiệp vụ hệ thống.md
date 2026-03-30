@@ -27,8 +27,8 @@ Travery (Travel Discovery) là công ty du lịch tự vận hành, sở hữu v
 
 | Tính năng | Mô tả |
 |---|---|
-| Đăng ký | Khách hàng tạo tài khoản bằng số điện thoại + mật khẩu. Xác thực OTP qua SMS trước khi kích hoạt tài khoản. |
-| Đăng nhập | Đăng nhập bằng số điện thoại + mật khẩu, hoặc OTP một lần nếu quên mật khẩu. |
+| Đăng ký | Khách hàng tạo tài khoản bằng email + mật khẩu. Xác thực qua email trước khi kích hoạt tài khoản. |
+| Đăng nhập | Đăng nhập bằng email + mật khẩu, hoặc xác thực một lần nếu quên mật khẩu. |
 | Bắt buộc đăng nhập | Khách hàng phải đăng nhập để đặt dịch vụ, xem lịch sử booking và sử dụng Chat. Khách chưa đăng nhập có thể duyệt danh sách tour/xe/khách sạn nhưng không thể đặt. |
 | Tài khoản nhân viên | Điều phối viên, Hướng dẫn viên và Lễ tân đăng nhập bằng tài khoản nội bộ do quản trị viên hệ thống cấp. Tài khoản nhân viên không trùng với tài khoản khách hàng. |
 | Phiên làm việc | Phiên đăng nhập duy trì trên thiết bị đã xác thực. Tự động hết hạn sau **30 ngày** không hoạt động. |
@@ -134,10 +134,6 @@ Travery (Travel Discovery) là công ty du lịch tự vận hành, sở hữu v
 |Họ tên người đặt|✅|Người đại diện cho toàn bộ vé trong đơn — là đầu mối liên hệ.|
 |Số điện thoại liên hệ|✅|Nhận thông báo, mã vé và tài xế liên hệ khi cần.|
 |Số lượng vé|✅|Tổng số vé cần mua. Mỗi vé gắn với một ghế cụ thể đã chọn trên sơ đồ.|
-|Loại xe|✅|Ghế hoặc Giường — xác định loại phương tiện cho chuyến đi.|
-|Khung giờ đi|✅|Sáng sớm (04:00–07:00), Sáng (07:00–12:00), Chiều (12:00–17:00), Tối (17:00–23:00).|
-|Tầng|✅|Tầng trên hoặc tầng dưới — áp dụng cho xe giường.|
-|Hàng ghế|✅|Đầu, giữa hoặc cuối xe — hỗ trợ chọn vị trí phù hợp với nhu cầu.|
 |Điểm đón cụ thể|✅|Chọn từ các điểm đón Travery niêm yết — áp dụng chung cho cả đoàn.|
 |Điểm trả khách cụ thể|✅|Chọn từ các điểm trả Travery niêm yết — áp dụng chung cho cả đoàn.|
 |Ví trí ghế cụ thể|✅|Chọn vị trí ghế. Vị trí ghế là một mã duy nhất xác định ghế đó.|
@@ -200,7 +196,7 @@ Travery (Travel Discovery) là công ty du lịch tự vận hành, sở hữu v
 
 |Bước|Bên thực hiện|Nội dung thực hiện|
 |:-:|---|---|
-|**1**|Khách hàng|Nhập điều kiện tìm kiếm: *địa điểm*, *ngày nhận phòng* và *ngày trả phòng*. Ứng dụng hiển thị danh sách khách sạn Travery còn phòng trống tại địa điểm đó. Hỗ trợ các bộ lọc: khoảng giá, khu vực, đánh giá, tiện nghi.|
+|**1**|Khách hàng|Nhập điều kiện tìm kiếm: *địa điểm*, *ngày nhận phòng* và *ngày trả phòng*. Ứng dụng hiển thị danh sách khách sạn Travery còn phòng trống tại địa điểm đó. Hỗ trợ các bộ lọc: khoảng giá, khu vực, đánh giá, tiện nghi, số lượng người ở.|
 |**2**|Khách hàng|Chọn khách sạn, xem chi tiết: hình ảnh, mô tả, vị trí, đánh giá, tiện nghi và danh sách các loại phòng còn trống (Mã phòng, Giá, Mô tả, Hình ảnh, Số giường, Số lượng người tối đa).|
 |**3**|Khách hàng|Chọn loại phòng phù hợp, nhấn **"Đặt phòng này"**.|
 |**4**|Khách hàng|Điền thông tin đặt phòng: *họ tên* và *số điện thoại* người đặt, *danh sách thành viên* (họ tên + CCCD/Hộ chiếu) và *yêu cầu đặc biệt* (nếu có — lưu ý có thể không được đáp ứng tùy tình trạng thực tế của khách sạn).|

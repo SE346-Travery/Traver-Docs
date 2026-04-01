@@ -22,6 +22,7 @@ Travery (Travel Discovery) là công ty du lịch tự vận hành, sở hữu v
 | **Điều phối viên**           | Nhân viên Văn phòng                      | Xác nhận đơn đặt tour, phân công xe và tài xế, xử lý yêu cầu đặc biệt, hỗ trợ khách hàng qua chat, xử lý hoàn tiền/hủy booking và giám sát tổng thể vận hành.                                                      |
 | **Hướng dẫn viên**           | Hướng dẫn viên du lịch        | Trực tiếp dẫn đoàn, cập nhật các mốc tiến độ trên thực địa, báo cáo sự cố khi phát sinh và hỗ trợ khách hàng tại hiện trường.                           |
 | **Lễ tân**                   | Nhân viên tại quầy khách sạn             | Xác nhận nhận phòng và trả phòng, xử lý dịch vụ tiện ích phát sinh, hỗ trợ khách hàng lưu trú tại khách sạn. Chỉ liên hệ Điều phối viên khi gặp sự cố nghiêm trọng vượt ngoài khả năng xử lý của khách sạn.       |
+|**Quản trị viên (Admin)**|Quản trị hệ thống|Xem báo cáo, thống kê tổng quan về hoạt động kinh doanh và vận hành của nền tảng. Quản lý (tạo mới, phân quyền, xóa/vô hiệu hóa) các tài khoản nội bộ của Travery.|
 
 ### 0.4 Tài khoản & Xác thực
 
@@ -30,7 +31,8 @@ Travery (Travel Discovery) là công ty du lịch tự vận hành, sở hữu v
 | Đăng ký | Khách hàng tạo tài khoản bằng email + mật khẩu. Xác thực qua email trước khi kích hoạt tài khoản. |
 | Đăng nhập | Đăng nhập bằng email + mật khẩu, hoặc xác thực một lần nếu quên mật khẩu. |
 | Bắt buộc đăng nhập | Khách hàng phải đăng nhập để đặt dịch vụ, xem lịch sử booking và sử dụng Chat. Khách chưa đăng nhập có thể duyệt danh sách tour/xe/khách sạn nhưng không thể đặt. |
-| Tài khoản nhân viên | Điều phối viên, Hướng dẫn viên và Lễ tân đăng nhập bằng tài khoản nội bộ do quản trị viên hệ thống cấp. Tài khoản nhân viên không trùng với tài khoản khách hàng. |
+| Tài khoản nhân viên | Quản trị viên, Điều phối viên, Hướng dẫn viên và Lễ tân đăng nhập bằng tài khoản nội bộ. Tài khoản nhân viên không trùng với tài khoản khách hàng. |
+| Quản lý tài khoản nội bộ | Quản trị viên (Admin) thực hiện việc tạo mới, cấp thông tin đăng nhập và xóa/vô hiệu hóa các tài khoản nội bộ của nhân viên Travery. Tài khoản Quản trị viên được cung cấp trước. |
 | Phiên làm việc | Phiên đăng nhập duy trì trên thiết bị đã xác thực. Tự động hết hạn sau **30 ngày** không hoạt động. |
 
 ---
@@ -253,8 +255,8 @@ Travery (Travel Discovery) là công ty du lịch tự vận hành, sở hữu v
 |:-:|---|---|
 |**1**|Khách hàng|Vào màn hình chi tiết booking, nhấn **"Hủy phòng"**. Ứng dụng hiển thị số tiền được hoàn dựa trên thời gian còn lại đến giờ check-in dự kiến.|
 |**2**|Khách hàng|Xác nhận hủy, ghi lý do (không bắt buộc).|
-|**3**|Điều phối viên|Nhận yêu cầu hủy, xử lý hoàn tiền theo chính sách và liên hệ khách nếu cần làm rõ.|
-|**4**|Điều phối viên|Xác nhận hoàn tất hủy booking. Phòng được giải phóng để nhận đặt mới.|
+|**3**|Lễ tân|Nhận yêu cầu hủy, xử lý hoàn tiền theo chính sách và liên hệ khách nếu cần làm rõ.|
+|**4**|Lễ tân|Xác nhận hoàn tất hủy booking. Phòng được giải phóng để nhận đặt mới.|
 
 **Bảng chính sách hoàn tiền — Khách Sạn**
 

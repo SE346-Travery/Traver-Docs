@@ -198,8 +198,8 @@ Chỉ khả dụng khi khách đã nhận phòng. Toàn bộ chi phí ghi vào h
 Khách hàng có thể hủy booking trước ngày nhận phòng. Sau khi đã nhận phòng, không thể hủy — mọi vấn đề phát sinh cần liên hệ Điều phối viên.
 
 - Khách hàng thông báo hủy phòng và ghi lý do (không bắt buộc).
-- Điều phối viên tiếp nhận yêu cầu hủy, xử lý hoàn tiền theo chính sách và liên hệ khách nếu cần làm rõ.
-- Điều phối viên xác nhận hoàn tất hủy, phòng được giải phóng để nhận đặt mới.
+- Lễ tân tiếp nhận yêu cầu hủy, xử lý hoàn tiền theo chính sách và liên hệ khách nếu cần làm rõ.
+- Lễ tân xác nhận hoàn tất hủy, phòng được giải phóng để nhận đặt mới.
 
 **Bảng chính sách hoàn tiền — Khách Sạn:**
 
